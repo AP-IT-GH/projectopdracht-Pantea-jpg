@@ -1,0 +1,109 @@
+.shopping-card {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  min-width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: rgba(81, 28, 137, 0.718);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.shopping-card h1 {
+  color: #fef6e4;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.NaarDeCheckout:hover {
+  background-color: var(--color-secondary);
+  color: antiquewhite;
+  /* box-shadow: 0 7px 5px grey; */
+}
+
+.NaarDeCheckout {
+  flex-shrink: 1;
+  flex: 0 0 auto;
+  border: 2px;
+  border-radius: 6px;
+  padding: 5px 7px 5px 7px;
+  color: var(--color-secondary);
+  font-weight: bold;
+  font-size: 15px;
+  background-color: var(--color-primary);
+}
+
+.wishlist {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  min-width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  color: antiquewhite;
+  background-color: rgba(81, 28, 137, 0.718);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+main {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.product-1 {
+  background-image: url(../assets/images/cat.jpg);
+}
+
+.product-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 480px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.product-header button {
+  border: 1px;
+  background-color: var(--color-primary);
+  padding: 5px;
+  border-radius: 10px;
+}
+.product-header button:hover {
+  background-color: var(--color-secondary);
+  color: antiquewhite;
+  box-shadow: 0 7px 5px grey;
+}
+
+.product-2 {
+  background-image: url(../assets/images/hamster.jpg);
+}
+
+.product-3 {
+  background-image: url(../assets/images/llama.jpg);
+}
+
+.product-4 {
+  background-image: url(../assets/images/cow.jpg);
+}
+
+.product-5 {
+  background-image: url(../assets/images/lion.jpg);
+}
+
+.product-6 {
+  background-image: url(../assets/images/bird.jpg);
+}
+
+.product-7 {
+  background-image: url(../assets/images/turtle.jpg);
+}

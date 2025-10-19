@@ -1,0 +1,59 @@
+.back-button{
+    font-size: 15px;
+}
+
+.back-button:hover{
+    color: var(--color-primary)
+}
+
+article{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.information{
+    max-width: 480px;
+    font-size: 15px;
+}
+
+div p{
+    text-align: center;
+}
+div li{
+    padding: 10px 20px 5px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.add-to-card{
+    border:1px;
+    background-color: var(--color-primary);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.add-to-card:hover{
+    background-color: var(--color-secondary);
+    color: antiquewhite;
+    box-shadow: 0 7px 5px grey;
+}
+
+.add-to-wishlist{
+    border:1px;
+    background-color: rgba(81, 28, 137, 0.718);
+    color: #fef6e4;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.add-to-wishlist:hover{
+    background-color: var(--color-secondary);
+    color: antiquewhite;
+    box-shadow: 0 7px 5px grey;
+}

@@ -1,0 +1,57 @@
+.contact-pic {
+  max-width: 500px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.forum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  min-width: 500px;
+  gap: 10px;
+
+  select {
+    appearance: revert;
+    flex: 1;
+  }
+  div {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    textarea {
+      flex: 1;
+      min-height: 200px;
+    }
+    input {
+      flex: 1;
+    }
+  }
+}
+
+.send-message {
+  flex-shrink: 1;
+  flex: 0 0 auto;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 5px 7px 5px 7px;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(215, 230, 250);
+  background-color: #264aaffb;
+}
+.send-message:hover {
+  background-color: var(--color-secondary);
+  color: antiquewhite;
+  box-shadow: 0 7px 5px grey;
+}

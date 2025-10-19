@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header logo"
+        src="./assets/logo/cropped_circle_image(1).png"
+        alt="logo"
+      />
+      <nav class="header menu">
+        <div><a class="nav-link" href="./index.html">HOME</a></div>
+        <div><a class="nav-link" href="./shop.html">SHOP</a></div>
+        <div><a class="nav-link" href="./contact.html">CONTACT</a></div>
+        <div class="nav-search">
+          <label for="search"></label>
+          <input type="search" id="search" name="search">
+          <button><a href="#">🔍</a></button>
+        </div>
+      </nav>
+    </header>
+
+    <h1>Stuur ons een bericht !</h1>
+
+    <div class="contact-pic">
+      <img src="./assets/logo/contact.jpg" alt="contact" />
+    </div>
+
+    <fieldset class="forum">
+      <div>
+        <input type="text" name="name" id="name" placeholder="Naam" />
+      </div>
+      <div>
+        <input type="email" name="email" id="email" placeholder="E-mail">
+      </div>
+      <div>
+        <select name="contact" id="contact">
+          <option value="Naar wie?">Naar wie?</option>
+          <option value="Ontwikkelaar">Ontwikkelaar</option>
+          <option value="Owner">Owner</option>
+        </select>
+        </div>
+      <div>
+        <textarea name="message" id="message" placeholder="Bericht"></textarea>
+      </div>
+    </fieldset>
+
+    <div class="send-message">
+      <button><a href="#">Bericht sturen 🚀</a></button>
+    </div>
+  
+    <footer>
+      &copy; 2025 Paws & Style. Alle rechten voorbehouden.
+    </footer>
+    
+  </body>
+</html>

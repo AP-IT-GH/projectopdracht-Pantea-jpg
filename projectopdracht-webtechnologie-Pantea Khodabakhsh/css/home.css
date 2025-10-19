@@ -1,0 +1,84 @@
+article {
+  flex-shrink: 1;
+  text-align: center;
+}
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  padding-top: 30px;
+  /* padding-bottom: 10px; */
+  font-weight: bold;
+}
+
+.Totheshop {
+  flex-shrink: 1;
+  flex: 0 0 auto;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 5px 7px 5px 7px;
+  color: var(--color-secondary);
+  font-weight: bold;
+  font-size: 15px;
+  background-color: var(--color-primary);
+}
+
+.Totheshop:hover {
+  background-color: var(--color-secondary);
+  color: antiquewhite;
+  box-shadow: 0 7px 5px grey;
+}
+
+.description {
+  flex-shrink: 1;
+  font-size: 20px;
+  text-align: center;
+}
+
+.product-header{
+  visibility: hidden;
+}
+.product-1 {
+  background-image: url(../assets/images/cat.jpg);
+}
+
+.product-2 {
+  background-image: url(../assets/images/hamster.jpg);
+}
+
+.product-3 {
+  background-image: url(../assets/images/llama.jpg);
+}
+
+.hidden {
+  display: none;
+}
+
+.owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.owner-introduction {
+  font: var(--color-primary);
+  font-size: 10px;
+  background-color: #f582ae;
+  border-radius: 10px;
+  padding: 50px 20px 30px 20px;
+}
+
+.owner-picture {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  bottom: -23px;
+  /* left: 40%; */
+  /* bottom: 55%; */
+  border-radius: 50%;
+}

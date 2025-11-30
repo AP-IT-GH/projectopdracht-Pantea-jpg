@@ -11,17 +11,17 @@
   <body>
     <header class="header">
       <img
-        class="header logo"
+        class="logo"
         src="./assets/logo/cropped_circle_image(1).png"
         alt="logo"
       />
       <nav class="header menu">
-        <div><a class="nav-link" href="./index.html">HOME</a></div>
-        <div><a class="nav-link" href="./shop.html">SHOP</a></div>
-        <div><a class="nav-link" href="./contact.html">CONTACT</a></div>
+        <div class="nav-link"><a href="./index.html">HOME</a></div>
+        <div class="nav-link"><a href="./shop.html">SHOP</a></div>
+        <div class="nav-link"><a href="./contact.html">CONTACT</a></div>
         <div class="nav-search">
           <label for="search"></label>
-          <input type="search" id="search" name="search">
+          <input type="search" id="search" name="search" />
           <button><a href="#">🔍</a></button>
         </div>
       </nav>
@@ -32,24 +32,34 @@
       <!-- a question about this part -->
     </button>
 
-    <article>Meouw zonnebrillen </article>
-    <img src="./assets/images/cat.jpg" alt="kat">
-
-    <div class="information">
-        <p>Onze mooie kat beschermt zichzelf niet alleen tegen de zon met deze stijlvolle zonnebril, maar steelt ook de show waar ze ook gaat! Met haar coole en grappige uitstraling zorgt ze voor een glimlach op ieders gezicht. Deze kattenzonnebril combineert mode en functionaliteit — perfect voor een fotoshoot, een wandeling in de zon of gewoon om jouw kat er onweerstaanbaar schattig uit te laten zien. Laat je kat stralen in stijl en trek alle aandacht met deze unieke zonnenbril!</p>
-        
-        <li> ⦁ Volledige zonbescherming😎</li>
-        <li> ⦁ Stijlvolle en unieke stijl✨</li>
-        <li> ⦁ Hoge Kwaliteit En duurzame materialen💎</li>
-    
+    <article>Meouw zonnebrillen</article>
+    <div class="img">
+      <img src="./assets/images/cat.jpg" alt="kat" />
     </div>
 
-    <button class="add-to-card"><a href="#">Toevoegen aan kaart</a></button>
-    <button class="add-to-wishlist"><a href="#">Toevoegen aan Favorieten</a></button>
+    <div class="information">
+      <article class="hidden-in-mobile">Meouw zonnebrillen</article>
+      <p>
+        Onze mooie kat beschermt zichzelf niet alleen tegen de zon met deze
+        stijlvolle zonnebril, maar steelt ook de show waar ze ook gaat! Met haar
+        coole en grappige uitstraling zorgt ze voor een glimlach op ieders
+        gezicht. Deze kattenzonnebril combineert mode en functionaliteit —
+        perfect voor een fotoshoot, een wandeling in de zon of gewoon om jouw
+        kat er onweerstaanbaar schattig uit te laten zien. Laat je kat stralen
+        in stijl en trek alle aandacht met deze unieke zonnenbril!
+      </p>
 
-    <footer>
-      &copy; 2025 Paws & Style. Alle rechten voorbehouden.
-    </footer>
-    
+      <li>⦁ Volledige zonbescherming😎</li>
+      <li>⦁ Stijlvolle en unieke stijl✨</li>
+      <li>⦁ Hoge Kwaliteit En duurzame materialen💎</li>
+      <div class="buttons">
+        <button class="add-to-card"><a href="#">Toevoegen aan kaart</a></button>
+        <button class="add-to-wishlist">
+          <a href="#">Toevoegen aan Favorieten</a>
+        </button>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 Paws & Style. Alle rechten voorbehouden.</footer>
   </body>
 </html>

@@ -1,23 +1,66 @@
-.contact-pic {
-  max-width: 500px;
+body {
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 240px 280px 0.5fr;
+    gap: 0px;
+    height: 100%;
+    margin: 10px 100px;
+  }
 }
 
-img {
+#map {
+  height: 300px;
+  width: 90%;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
+  @media screen and (min-width: 1024px) {
+    grid-column: 2;
+    grid-row: 2/4;
+  }
 }
 
-h1 {
-  font-size: 20px;
-  font-weight: bold;
+.contact-text {
+  width: 83%;
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 30px;
+    h1 {
+      font-size: 2rem;
+      padding: 10px 20px 20px 0px;
+    }
+    p {
+      font-size: 1.2rem;
+      padding: 10px 20px 10px 0px;
+    }
+  }
 }
 
+.hidden-in-mobile {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: unset;
+  }
+}
 .forum {
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
-  min-width: 500px;
+  align-items: center;
+  width: 80%;
   gap: 10px;
+  & > * {
+    width: 100%;
+  }
 
   select {
     appearance: revert;
@@ -37,11 +80,39 @@ h1 {
       flex: 1;
     }
   }
+  @media screen and (min-width: 1024px) {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    #hidden-in-desktop {
+      display: none;
+    }
+    .name {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .email {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .message {
+      grid-column: 1/3;
+      grid-row: 2;
+      max-height: 150px;
+    }
+    .send-message {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
 }
 
 .send-message {
-  flex-shrink: 1;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  text-align: center;
+  width: 150px;
   border: 2px solid black;
   border-radius: 6px;
   padding: 5px 7px 5px 7px;
@@ -54,4 +125,32 @@ h1 {
   background-color: var(--color-secondary);
   color: antiquewhite;
   box-shadow: 0 7px 5px grey;
+}
+
+footer {
+  @media screen and (min-width: 1024px) {
+    grid-column: 1/3;
+    grid-row: 4;
+    margin-top: 45px;
+  }
+}
+.header {
+  .logo {
+    flex-shrink: 1;
+    flex-basis: 20px;
+    box-sizing: content-box;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+    background-color: unset;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-column: 1/3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+  }
 }

@@ -11,23 +11,23 @@
   <body>
     <header class="header">
       <img
-        class="header logo"
+        class="logo"
         src="./assets/logo/cropped_circle_image(1).png"
         alt="logo"
       />
       <nav class="header menu">
-        <div><a class="nav-link" href="./index.html">HOME</a></div>
-        <div><a class="nav-link" href="./shop.html">SHOP</a></div>
-        <div><a class="nav-link" href="./contact.html">CONTACT</a></div>
+        <div class="nav-link"><a  href="./index.html">HOME</a></div>
+        <div class="nav-link"><a href="./shop.html">SHOP</a></div>
+        <div class="nav-link"><a href="./contact.html">CONTACT</a></div>
         <div class="nav-search">
           <label for="search"></label>
-          <input type="search" id="search" name="search">
+          <input type="search" id="search" name="search" />
           <button><a href="#">🔍</a></button>
         </div>
       </nav>
     </header>
 
-    <article>
+    <article class="intro">
       <h1>Welkom bij ZooNique! 🐾</h1>
       <br />
       <h2>
@@ -35,11 +35,10 @@
         Bij ZooNique vind je alles; van leuke accessoires tot dingen die je dier
         nog specialer, cooler en unieker maken! 🎉🐶🐱
       </h2>
+      <div class="Totheshop">
+        <button><a href="./shop.html">Naar de winkel !</a></button>
+      </div>
     </article>
-
-    <div class="Totheshop">
-      <button><a href="./shop.html">Naar de winkel !</a></button>
-    </div>
 
     <p class="description">
       Bijzondere en unieke producten die u nergens anders vindt!🔥<br />
@@ -47,66 +46,65 @@
       Vol met leuke en praktische spulletjes die het dier unieker maken 🐾
     </p>
 
-    <h2>Onze top producten:</h2>
-
-    <article class="product product-1">
-       <div class="product-header">
-        <button>❤️</button>
-        <button>Toevoegen aan kaart🛒</button>
-      </div>
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="info">
-        <div>
-          <p class="product-name"><a href="./product-Meouwzonnebrillen.html"> Meouw zonnebrillen</a></p>
-          <p class="category">Accessoire</p>
+    <h2 class="hidden-in-desktop">Onze top producten:</h2>
+    <div class="product-section">
+      <article class="product product-1">
+        <div class="product-header">
+          <button>❤️</button>
+          <button>Toevoegen aan kaart🛒</button>
         </div>
-        <div class="price">50 EUR</div>
-      </div>
-    </article>
-
-    <article class="product product-2">
-      <div class="product-header">
-        <button>❤️</button>
-        <button>Toevoegen aan kaart</button>
-      </div>
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="info">
-        <div>
-          <p class="product-name"><a href="./product-HamsterAstronautenpak.html">Hamster Astronautenpak </a> </p>
-          <p class="category">Kleren</p>
+        <div class="info">
+          <div>
+            <p class="product-name">
+              <a href="./product-Meouwzonnebrillen.html"> Meouw zonnebrillen</a>
+            </p>
+            <p class="category">Accessoire</p>
+          </div>
+          <div class="price">50 EUR</div>
         </div>
-        <div class="price">55 EUR</div>
-      </div>
-    </article>
+      </article>
 
-    <article class="product product-3">
-      <div class="product-header">
-        <button>❤️</button>
-        <button>Toevoegen aan kaart</button>
-      </div>
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="info">
-        <div>
-          <p class="product-name"><a href="./product-LamaKetting.html">Lama ketting</a></p>
-          <p class="category">Accessoire</p>
+      <article class="product product-2">
+        <div class="product-header">
+          <button>❤️</button>
+          <button>Toevoegen aan kaart</button>
         </div>
-        <div class="price">25 EUR</div>
-      </div>
-    </article>
+        <div class="info">
+          <div>
+            <p class="product-name">
+              <a href="./product-HamsterAstronautenpak.html"
+                >Hamster Astronautenpak
+              </a>
+            </p>
+            <p class="category">Kleren</p>
+          </div>
+          <div class="price">55 EUR</div>
+        </div>
+      </article>
+
+      <article class="product product-3">
+        <div class="product-header">
+          <button>❤️</button>
+          <button>Toevoegen aan kaart</button>
+        </div>
+        <div class="info">
+          <div>
+            <p class="product-name">
+              <a href="./product-LamaKetting.html">Lama ketting</a>
+            </p>
+            <p class="category">Accessoire</p>
+          </div>
+          <div class="price">25 EUR</div>
+        </div>
+      </article>
+    </div>
 
     <article class="owner">
-      <!-- <img
+      <img
         class="owner-picture"
-        src="./assets/logo/owner.png"
+        src="./assets/logo/owner(2).png"
         alt="founder"
-      /> -->
-      <div>
-        <img
-        class="owner-picture"  
-        src="./assets/logo/owner(2).png" 
-        alt="founder">
-      </div>
-
+      />
       <p class="owner-introduction">
         Hoi! Ik ben Pantea ... degene die op een dag ontdekte dat stijl niet
         alleen voor mensen is 😎 Zo is Zoonique geboren: de plek waar dierenmode
@@ -119,8 +117,6 @@
       </p>
     </article>
 
-    <footer>
-      &copy; 2025 Paws & Style. Alle rechten voorbehouden.
-    </footer>
+    <footer>&copy; 2025 Paws & Style. Alle rechten voorbehouden.</footer>
   </body>
 </html>

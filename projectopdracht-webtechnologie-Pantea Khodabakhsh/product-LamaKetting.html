@@ -11,17 +11,17 @@
   <body>
     <header class="header">
       <img
-        class="header logo"
+        class="logo"
         src="./assets/logo/cropped_circle_image(1).png"
         alt="logo"
       />
       <nav class="header menu">
-        <div><a class="nav-link" href="./index.html">HOME</a></div>
-        <div><a class="nav-link" href="./shop.html">SHOP</a></div>
-        <div><a class="nav-link" href="./contact.html">CONTACT</a></div>
+        <div class="nav-link"><a href="./index.html">HOME</a></div>
+        <div class="nav-link"><a href="./shop.html">SHOP</a></div>
+        <div class="nav-link"><a href="./contact.html">CONTACT</a></div>
         <div class="nav-search">
           <label for="search"></label>
-          <input type="search" id="search" name="search">
+          <input type="search" id="search" name="search" />
           <button><a href="#">🔍</a></button>
         </div>
       </nav>
@@ -33,11 +33,14 @@
     </button>
 
     <article>Lama ketting</article>
-    <img src="./assets/images/llama.jpg" alt="Llama" />
+    <div class="img">
+      <img src="./assets/images/llama.jpg" alt="Llama" />
+    </div>
 
     <div class="information">
+      <article class="hidden-in-mobile">Lama ketting</article>
       <p>
-        Tijd om te stralen! 🦙💫 <br />
+        <span class="bolder-text">Tijd om te stralen! 🦙💫</span> <br />
         Jouw lama verdient het om eruit te zien als een echte ster. Met deze
         prachtige halsband loopt hij vol trots over het veld elegant, charmant
         en een tikkeltje eigenwijs. Perfect voor lama’s die houden van aandacht,
@@ -49,16 +52,14 @@
       <li>⦁ Stijlvol en uniek design dat opvalt 💎</li>
       <li>⦁ Gemaakt van hoogwaardige materialen voor langdurig plezier ⚡</li>
       <li>⦁ Anti-allergisch en zacht voor de pels 🐾</li>
+      <div class="buttons">
+        <button class="add-to-card"><a href="#">Toevoegen aan kaart</a></button>
+        <button class="add-to-wishlist">
+          <a href="#">Toevoegen aan Favorieten</a>
+        </button>
+      </div>
     </div>
 
-    <button class="add-to-card"><a href="#">Toevoegen aan kaart</a></button>
-    <button class="add-to-wishlist">
-      <a href="#">Toevoegen aan Favorieten</a>
-    </button>
-
-    <footer>
-      &copy; 2025 Paws & Style. Alle rechten voorbehouden.
-    </footer>
-    
+    <footer>&copy; 2025 Paws & Style. Alle rechten voorbehouden.</footer>
   </body>
 </html>

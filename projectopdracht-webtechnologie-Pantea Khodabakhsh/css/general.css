@@ -1,6 +1,6 @@
 :root {
-  --color-bg: #fef6e4;
-  --color-primary: #f582ae;
+  --color-bg: #fcedca;
+  --color-primary: #faa1c3;
   --color-secondary: #001858;
   --color-text: #172c66;
 }
@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  /* text-align: center; */
   gap: 25px;
   justify-content: center;
   background-color: var(--color-bg);
@@ -21,13 +20,35 @@ body {
 }
 
 .header {
+  .menu {
+    background-color: unset;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  margin: 10px 0px;
+  a {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  .nav-link {
+    transition: transform 200ms linear;
+    &:hover {
+      transform: scale(1.4);
+      text-shadow: 3px 3px #172c6633;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(245, 130, 174, 0.336);
+  }
 }
 
-.header.logo {
+.logo {
   flex-shrink: 1;
   flex-basis: 20px;
   box-sizing: content-box;
@@ -36,19 +57,31 @@ body {
   height: 100px;
   border-radius: 35px;
 }
-.header.menu {
+.menu {
   flex-shrink: 1;
   font-weight: bold;
   flex-basis: 20px;
   text-align: center;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & > * {
+      margin: 0px 20px;
+    }
+  }
 }
 
 nav > * {
   padding: 5px;
 }
 
-.nav-link:hover {
-  color: var(--color-primary) !important;
+.nav-link {
+  &:hover {
+    color: #341355;
+    /* transform:  !important; */
+  }
 }
 
 .nav-search {
@@ -67,8 +100,8 @@ nav > * {
   padding: 2px;
 }
 
-.product-name:hover{
-  background-color:#172c66c9;
+.product-name:hover {
+  background-color: #172c66c9;
   color: antiquewhite;
   box-shadow: 0 7px 5px grey;
   border-radius: 10px;
@@ -87,16 +120,20 @@ nav > * {
 }
 
 .product {
-  max-width: 500px;
-  width: 100%;
+  width: 90%;
   height: 500px;
-  background-position: center center;
-  flex: 0 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  transition: transform 200ms linear;
+  &:hover {
+    transform: scale(1.1);
+  }
 
   .info {
     background-color: antiquewhite;
@@ -114,7 +151,7 @@ nav > * {
   }
 }
 
-footer{
+footer {
   background-color: rgba(245, 130, 174, 0.464);
   padding: 10px;
   flex: 1;

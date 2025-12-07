@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <script type="module" src="./script/contact.js"></script>
 
     <link
       rel="stylesheet"
@@ -15,9 +16,11 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -49,16 +52,19 @@
       </p>
     </div>
 
-
     <div id="map"></div>
 
     <fieldset class="forum">
-      <div class="name">
-        <input type="text" name="name" id="name" placeholder="Naam" />
-      </div>
-      <div class="email">
-        <input type="email" name="email" id="email" placeholder="E-mail" />
-      </div>
+      <input type="text" name="name" id="name" placeholder="Naam" required />
+
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+        required
+      />
+
       <div id="hidden-in-desktop">
         <select name="contact" id="contact">
           <option value="Naar wie?">Naar wie?</option>
@@ -66,12 +72,14 @@
           <option value="Owner">Owner</option>
         </select>
       </div>
-      <div class="message">
-        <textarea name="message" id="message" placeholder="Bericht"></textarea>
+
+      <textarea name="message" id="message" placeholder="Bericht"></textarea>
+
+      <button class="send-message">Bericht sturen 🚀</button>
+      <div class="errorSuccess">
+        <div class="success"></div>
+        <div class="error"></div>
       </div>
-      <button class="send-message">
-        <input type="submit" value="Bericht sturen 🚀" />
-      </button>
     </fieldset>
 
     <footer>&copy; 2025 Paws & Style. Alle rechten voorbehouden.</footer>

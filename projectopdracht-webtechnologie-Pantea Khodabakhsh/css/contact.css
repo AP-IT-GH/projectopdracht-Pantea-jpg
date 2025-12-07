@@ -58,6 +58,35 @@ body {
   align-items: center;
   width: 80%;
   gap: 10px;
+  #email:invalid {
+    border: 3px solid darkred;
+  }
+  #email:valid {
+    border: 3px solid darkgreen;
+  }
+  .errorSuccess {
+    display: flex;
+    flex-direction: column;
+    background-color: unset;
+    border: unset;
+    width: 100%;
+    padding: unset;
+    & > * {
+      background-color: unset;
+      border: unset;
+      font-size: 1rem;
+      width: 100%;
+      padding: unset;
+    }
+    .error {
+      color: darkred;
+      display: flex;
+      flex-direction: column;
+    }
+    .success {
+      color: darkgreen;
+    }
+  }
   & > * {
     width: 100%;
   }
@@ -66,7 +95,8 @@ body {
     appearance: revert;
     flex: 1;
   }
-  div {
+  input,
+  textarea {
     background-color: rgb(255, 255, 255);
     border: 1px solid;
     border-radius: 5px;
@@ -85,28 +115,56 @@ body {
     grid-row: 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     #hidden-in-desktop {
       display: none;
     }
-    .name {
+    .errorSuccess {
+      grid-column: 1;
+      grid-row: 4;
+      display: flex;
+      flex-direction: column;
+      background-color: unset;
+      border: unset;
+      width: 100%;
+      padding: unset;
+      & > * {
+        background-color: unset;
+        border: unset;
+        font-size: 1rem;
+        width: 100%;
+        padding: unset;
+      }
+      .error {
+        color: darkred;
+        display: flex;
+        flex-direction: column;
+      }
+      .success {
+        color: darkgreen;
+      }
+    }
+    #name {
       grid-column: 1;
       grid-row: 1;
     }
-    .email {
+    #email {
       grid-column: 2;
       grid-row: 1;
     }
-    .message {
+    #message {
       grid-column: 1/3;
       grid-row: 2;
-      max-height: 150px;
+      min-height: 150px;
     }
     .send-message {
       grid-column: 1;
       grid-row: 3;
     }
   }
+}
+
+.success {
 }
 
 .send-message {

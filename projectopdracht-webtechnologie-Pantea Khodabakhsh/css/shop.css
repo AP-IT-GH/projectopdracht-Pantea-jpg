@@ -44,6 +44,14 @@ body {
     color: #001858;
   }
 }
+.priceSection {
+  margin: 5px 40px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #faa1c37b;
+  max-width: 50%;
+  height: 15px;
+}
 
 .divSections {
   display: flex;
@@ -132,8 +140,7 @@ main {
     justify-content: space-between;
   }
 }
-.product-1 {
-  background-image: url(../assets/images/cat.jpg);
+.product:first-of-type {
   @media screen and (min-width: 1024px) {
     grid-column: 1;
     grid-row: 3;
@@ -170,47 +177,42 @@ main {
   box-shadow: 0 7px 5px grey;
 }
 
-.product-2 {
-  background-image: url(../assets/images/hamster.jpg);
+.product:nth-of-type(2) {
   @media screen and (min-width: 1024px) {
     grid-column: 2;
     grid-row: 3;
   }
 }
 
-.product-3 {
-  background-image: url(../assets/images/llama.jpg);
+.product:nth-of-type(3) {
   @media screen and (min-width: 1024px) {
     grid-column: 3;
     grid-row: 3;
   }
 }
 
-.product-4 {
-  background-image: url(../assets/images/cow.jpg);
+.product:nth-of-type(4) {
   @media screen and (min-width: 1024px) {
     grid-column: 1;
     grid-row: 4;
   }
 }
 
-.product-5 {
-  background-image: url(../assets/images/lion.jpg);
+.product:nth-of-type(5) {
   @media screen and (min-width: 1024px) {
     grid-column: 2;
     grid-row: 4;
   }
 }
 
-.product-6 {
-  background-image: url(../assets/images/bird.jpg);
+.product:nth-of-type(6) {
   @media screen and (min-width: 1024px) {
     grid-column: 3;
     grid-row: 4;
   }
 }
 
-.product-7 {
+.product:last-of-type {
   background-image: url(../assets/images/turtle.jpg);
   @media screen and (min-width: 1024px) {
     grid-column: 1;

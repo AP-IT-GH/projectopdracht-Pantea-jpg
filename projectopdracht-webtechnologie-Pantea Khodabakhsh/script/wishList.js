@@ -58,6 +58,7 @@ let addingItemsArray = [];
 for (let index = 0; index < products.length; index++) {
   favouriteBtn[index].addEventListener("click", () => {
     const element = products[index].name;
+    
     const price = products[index].price;
     favouriteBtn[index].textContent = "❤️";
 

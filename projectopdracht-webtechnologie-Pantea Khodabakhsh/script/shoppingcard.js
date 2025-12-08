@@ -52,7 +52,11 @@ let products = [
 ];
 
 let AddingToCard = document.querySelector("#addedItems");
+
 let allButtons = document.querySelectorAll(".addingToCard");
+
+let totalPrice = document.querySelector("#totalPrice");
+
 let addingItemsArray = [];
 let sumOfPrices = 0;
 
@@ -62,10 +66,12 @@ for (let index = 0; index < allButtons.length; index++) {
     const price = products[index].price;
 
     let existingItem = addingItemsArray.find((item) => item.name === element);
-  
+
     if (existingItem) {
       let currentPrice = Number(existingItem.priceElem.textContent);
       existingItem.priceElem.textContent = currentPrice + price;
+      sumOfPrices += price;
+      totalPrice.textContent = sumOfPrices;
       return;
     }
 
@@ -83,11 +89,15 @@ for (let index = 0; index < allButtons.length; index++) {
     divSetion.appendChild(addingLogo);
     divSetion.appendChild(addingItem);
     divSetion.appendChild(addingPrice);
+    sumOfPrices += parseInt(addingPrice.textContent);
+    totalPrice.textContent = sumOfPrices;
 
     AddingToCard.appendChild(divSetion);
 
     divSetion.addEventListener("click", () => {
       AddingToCard.removeChild(divSetion);
+      sumOfPrices -= parseInt(addingPrice.textContent);
+      totalPrice.textContent = sumOfPrices;
       addingItemsArray = addingItemsArray.filter(
         (item) => item.name !== element
       );
@@ -97,12 +107,5 @@ for (let index = 0; index < allButtons.length; index++) {
       name: element,
       priceElem: addingPrice,
     });
-
-    // for (let i = 0; i < addingItemsArray.length; i++) {
-    //   console.log(addingItemsArray[i])
-
-    //   // let converter =parseInt(addingItemsArray[i].priceElem.textContent);
-    //   // console.log(converter)
-    // }
   });
 }

@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/shop.css" />
-    <script type="module" src="./script/wishList.js"></script>
+    <script type="module" src="./script/shopPage.js"></script>
     <script type="module" src="./script/shoppingcard.js"></script>
+    <script type="module" src="./script/wishList.js"></script>
   </head>
   <body>
     <header class="header">
@@ -28,14 +29,14 @@
         </div>
       </nav>
     </header>
- 
+
     <div class="shopping-card">
       <h1>Winkelwagentje</h1>
 
       <div id="addedItems"></div>
 
       <div>
-        <h1><strong>Totaal:</strong> 20 EUR <br /></h1>
+        <p class="priceSection">Total: <span id="totalPrice"></span> </p>
         <button class="NaarDeCheckout">
           <a href="">Naar de checkout !</a>
         </button>
@@ -44,136 +45,23 @@
     <div class="wishlist">
       <h1>❤️ Favorieten</h1>
       <div id="Wishlists"></div>
-
     </div>
-    
+
     <main class="text">Onze producten:</main>
 
-    <article class="product product-1">
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="product-header">
-        <button class="favourite">🤍</button>
-        <button class="addingToCard">Toevoegen aan kaart</button>
-      </div>
+    <article class="product" id="1"></article>
 
-      <div class="info">
-        <div>
-          <p class="product-name">
-            <a href="./product-Meouwzonnebrillen.html"> Meouw zonnebrillen</a>
-          </p>
-          <p class="category">Accessoire</p>
-        </div>
-        <div class="price">50 EUR</div>
-      </div>
-    </article>
+    <article class="product" id="2"></article>
 
-    <article class="product product-2">
-      <div class="product-header">
-        <button class="favourite">🤍</button>
-        <button class="addingToCard">Toevoegen aan kaart</button>
-      </div>
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="info">
-        <div>
-          <p class="product-name">
-            <a href="./product-HamsterAstronautenpak.html"
-              >Hamster Astronautenpak
-            </a>
-          </p>
-          <p class="category">Kleren</p>
-        </div>
-        <div class="price">55 EUR</div>
-      </div>
-    </article>
+    <article class="product" id="3"></article>
 
-    <article class="product product-3">
-      <div class="product-header">
-        <button class="favourite">🤍</button>
-        <button class="addingToCard">Toevoegen aan kaart</button>
-      </div>
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="info">
-        <div>
-          <p class="product-name">
-            <a href="./product-LamaKetting.html">Lama ketting</a>
-          </p>
-          <p class="category">Accessoire</p>
-        </div>
-        <div class="price">25 EUR</div>
-      </div>
-    </article>
+    <article class="product" id="4"></article>
 
-    <article class="product product-4">
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="product-header">
-        <button class="favourite">🤍</button>
-        <button class="addingToCard">Toevoegen aan kaart</button>
-      </div>
+    <article class="product" id="5"></article>
 
-      <div class="info">
-        <div>
-          <p class="product-name">
-            <a href="./product-BatmanKoeKostuum.html">Batman Koe Kostuum</a>
-          </p>
-          <p class="category">Kleren</p>
-        </div>
-        <div class="price">65 EUR</div>
-      </div>
-    </article>
+    <article class="product" id="6"></article>
 
-    <article class="product product-5">
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="product-header">
-        <button class="favourite">🤍</button>
-        <button class="addingToCard">Toevoegen aan kaart</button>
-      </div>
-
-      <div class="info">
-        <div>
-          <p class="product-name">
-            <a href="./product-LeeuwRok.html">Leeuw Rok</a>
-          </p>
-          <p class="category">Kleren</p>
-        </div>
-        <div class="price">60 EUR</div>
-      </div>
-    </article>
-
-    <article class="product product-6">
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="product-header">
-        <button class="favourite">🤍</button>
-        <button class="addingToCard">Toevoegen aan kaart</button>
-      </div>
-
-      <div class="info">
-        <div>
-          <p class="product-name">
-            <a href="./product-VogelHoedje.html">Vogel Hoedje</a>
-          </p>
-          <p class="category">Accessoire</p>
-        </div>
-        <div class="price">35 EUR</div>
-      </div>
-    </article>
-
-    <article class="product product-7">
-      <!-- <img class="hidden" src="./assets/images/cat.jpg" alt="cat"> -->
-      <div class="product-header">
-        <button class="favourite">🤍</button>
-        <button class="addingToCard">Toevoegen aan kaart</button>
-      </div>
-
-      <div class="info">
-        <div>
-          <p class="product-name">
-            <a href="./product-SchildpadSneakers.html">Schildpad Sneakers</a>
-          </p>
-          <p class="category">Schoenen</p>
-        </div>
-        <div class="price">40 EUR</div>
-      </div>
-    </article>
+    <article class="product" id="7"></article>
 
     <footer>&copy; 2025 Paws & Style. Alle rechten voorbehouden.</footer>
   </body>

@@ -2,19 +2,20 @@ body {
   @media screen and (min-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 280px 280px 0.5fr;
+    grid-template-rows: 0.5fr auto auto 0.5fr;
     gap: 0px;
     height: 100%;
     margin: 0px 100px;
   }
 }
 .intro {
-  flex-shrink: 1;
+  flex-shrink: 0;
   text-align: center;
   @media screen and (min-width: 1024px) {
     grid-column: 1;
     grid-row: 2;
-    max-width: 75%;
+    max-width: 80%;
+    max-height: 300px;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -147,7 +148,7 @@ h2 {
     grid-row: 3;
     place-self: right;
     flex-direction: row;
-    margin: 10px 0px;
+    margin: 10px 0px 5px 0px;
   }
 }
 

@@ -68,10 +68,12 @@ for (let index = 0; index < allButtons.length; index++) {
     let existingItem = addingItemsArray.find((item) => item.name === element);
 
     if (existingItem) {
-      let currentPrice = Number(existingItem.priceElem.textContent);
-      existingItem.priceElem.textContent = currentPrice + price;
+      existingItem.amount += 1;
+      existingItem.priceElem.textContent = existingItem.amount * price;
       sumOfPrices += price;
       totalPrice.textContent = sumOfPrices;
+
+      existingItem.amountElem.textContent = existingItem.amount;
       return;
     }
 
@@ -80,13 +82,16 @@ for (let index = 0; index < allButtons.length; index++) {
 
     let addingItem = document.createElement("p");
     let addingPrice = document.createElement("p");
+    let addingAmount = document.createElement("p");
     let addingLogo = document.createElement("img");
 
     addingItem.textContent = element;
+    addingAmount.textContent = 1;
     addingPrice.textContent = price;
     addingLogo.src = products[index].logo;
 
     divSetion.appendChild(addingLogo);
+    divSetion.appendChild(addingAmount);
     divSetion.appendChild(addingItem);
     divSetion.appendChild(addingPrice);
     sumOfPrices += parseInt(addingPrice.textContent);
@@ -105,7 +110,10 @@ for (let index = 0; index < allButtons.length; index++) {
 
     addingItemsArray.push({
       name: element,
+      price: price,
       priceElem: addingPrice,
+      amount: 1,
+      amountElem: addingAmount,
     });
   });
 }

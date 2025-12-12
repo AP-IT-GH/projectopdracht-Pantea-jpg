@@ -16,7 +16,7 @@ const shopItems = [
     category: "Kleren",
     price: 55,
     description:
-      "De aftelling is begonnen... 🚀<br> Jouw kleine astronaut is klaar om op avontuur te gaan! <br> In dit superzachte en schattige pakje voelt elke ontdekking als een ruimtemissie vol plezier. <br> Perfect voor kleine dromers die houden van avontuur, verkleedpartijtjes of gewoon een knusse dag thuis. <br> Met dit unieke astronautenpakje wordt elke dag een nieuwe reis door de sterren. 🌙✨ <li>⦁ Comfortabel en veilig voor dagelijks gebruik 🐾 <li>⦁ Stijlvol en uniek design dat opvalt 💎",
+      "De aftelling is begonnen... 🚀<br> Jouw kleine astronaut is klaar om op avontuur te gaan! <br> In dit superzachte en schattige pakje voelt elke ontdekking als een ruimtemissie vol plezier. <br> Perfect voor kleine dromers die houden van avontuur, verkleedpartijtjes of gewoon een knusse dag thuis. <br> Met dit unieke astronautenpakje wordt elke dag een nieuwe reis door de sterren. 🌙✨ <li>⦁ Comfortabel en veilig voor dagelijks gebruik 🐾 <li>⦁ Stijlvol en uniek design dat opvalt 💎</li>",
   },
   {
     id: 3,

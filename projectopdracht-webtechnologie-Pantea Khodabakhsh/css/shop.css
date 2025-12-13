@@ -225,7 +225,7 @@ footer {
     grid-row: 7;
   }
 }
-.header {
+header {
   @media screen and (min-width: 1024px) {
     grid-column: 1/5;
     grid-row: 1;

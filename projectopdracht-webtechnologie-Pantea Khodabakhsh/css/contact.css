@@ -164,9 +164,6 @@ body {
   }
 }
 
-.success {
-}
-
 .send-message {
   flex: 0 1 auto;
   text-align: center;
@@ -192,7 +189,7 @@ footer {
     margin-top: 45px;
   }
 }
-.header {
+header {
   .logo {
     flex-shrink: 1;
     flex-basis: 20px;

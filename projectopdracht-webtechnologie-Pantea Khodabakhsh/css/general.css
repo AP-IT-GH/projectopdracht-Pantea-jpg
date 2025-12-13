@@ -19,10 +19,7 @@ body {
   padding: 5px 10px 5px 10px;
 }
 
-.header {
-  .menu {
-    background-color: unset;
-  }
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +80,7 @@ nav > * {
   }
 }
 
-.nav-search {
+#nav-search {
   flex-shrink: 1;
   display: flex;
   flex-direction: row;

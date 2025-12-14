@@ -1,5 +1,5 @@
 "use strict";
-var map = L.map("map").setView([-3.411823 , -62.263224], 13);
+var map = L.map("map").setView([-3.411823, -62.263224], 13);
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
@@ -18,17 +18,15 @@ var myOwnLogoo = L.icon({
   iconAnchor: [25, 20],
 });
 
-var marker = L.marker([-3.469206 , -62.217632], { icon: myOwnLogo }).addTo(map);
+var marker = L.marker([-3.469206, -62.217632], { icon: myOwnLogo }).addTo(map);
 
-var markerr = L.marker([-3.411823 , -62.263224], { icon: myOwnLogoo }).addTo(map);
+var markerr = L.marker([-3.411823, -62.263224], { icon: myOwnLogoo }).addTo(
+  map
+);
 
 marker
-  .bindPopup(
-    "<b>This is the Shop</b><br>Make sure that you also visit us!!"
-  )
+  .bindPopup("Dit is de winkel.<br>Zorg ervoor dat u ons ook bezoekt!")
   .openPopup();
 markerr
-  .bindPopup(
-    "<b>This is where you can usually find me</b> <b>if I wasn't at the shop!!</b>"
-  )
+  .bindPopup("Hier vind je me meestal als ik niet in de winkel ben!")
   .openPopup();

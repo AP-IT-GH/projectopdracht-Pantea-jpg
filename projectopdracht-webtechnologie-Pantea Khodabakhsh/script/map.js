@@ -13,7 +13,7 @@ var myOwnLogo = L.icon({
   iconAnchor: [25, 20],
 });
 var myOwnLogoo = L.icon({
-  iconUrl: "./assets/logo/owner.png",
+  iconUrl: "./assets/logo/owner(2).png",
   iconSize: [50, 50],
   iconAnchor: [25, 20],
 });

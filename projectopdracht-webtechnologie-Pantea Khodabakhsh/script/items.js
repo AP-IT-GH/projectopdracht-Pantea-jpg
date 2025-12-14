@@ -4,6 +4,8 @@ const shopItems = [
     id: 1,
     name: "Meouw zonnebrillen",
     image: "./assets/images/cat.jpg",
+    imageCode: "cat.jpg",
+    slide: "./assets/extra/cat.png",
     category: "Accessoire",
     price: 50,
     description:
@@ -13,6 +15,8 @@ const shopItems = [
     id: 2,
     name: "Hamster Astronautenpak",
     image: "./assets/images/hamster.jpg",
+    imageCode: "hamster.jpg",
+    slide: "./assets/extra/hamster.png",
     category: "Kleren",
     price: 55,
     description:
@@ -22,6 +26,8 @@ const shopItems = [
     id: 3,
     name: "Lama ketting",
     image: "./assets/images/llama.jpg",
+    imageCode: "llama.jpg",
+    slide: "./assets/extra/llama.png",
     category: "Accessoire",
     price: 25,
     description:
@@ -31,15 +37,19 @@ const shopItems = [
     id: 4,
     name: "Batman Koe Kostuum",
     image: "./assets/images/cow.jpg",
+    imageCode: "cow.jpg",
+    slide: "./assets/extra/cow.png",
     category: "Kleren",
     price: 65,
     description:
-      "Daar komt hij aan... de held van de boerderij! 🦇🐄<br /> Holy cow! Met dit geweldige Batman kostuum verandert jouw koe in een echte superheld die klaarstaat om onrecht te bestrijden. <br /> Van weiland tot stal — overal trekt hij de aandacht met zijn stoere look en charmante attitude. Perfect voor gespierde koeien 💥 <br /> Laat jouw koe schitteren als de ultieme boerderij-held! 🖤",
+      "Daar komt hij aan... de held van de boerderij! 🦇🐄<br /> Holy cow! Met dit geweldige Batman kostuum verandert jouw koe in een echte superheld die klaarstaat om onrecht te bestrijden. <br /> Van weiland tot stal — overal trekt hij de aandacht met zijn stoere look en charmante attitude. Perfect voor gespierde koeien 💥 <br /> Laat jouw koe schitteren als de ultieme boerderij-held! 🖤  <li>⦁ Stijlvol en uniek design dat opvalt 💎</li> <li>⦁ Gemaakt van hoogwaardige, duurzame materialen ⚡ </li>",
   },
   {
     id: 5,
     name: "Leeuw Rok",
     image: "./assets/images/lion.jpg",
+    imageCode: "lion.jpg",
+    slide: "./assets/extra/lion.png",
     category: "Kleren",
     price: 60,
     description:
@@ -49,6 +59,8 @@ const shopItems = [
     id: 6,
     name: "Vogel Hoedje",
     image: "./assets/images/bird.jpg",
+    imageCode: "bird.jpg",
+    slide: "./assets/extra/bird.png",
     category: "Accessoire",
     price: 35,
     description:
@@ -58,6 +70,8 @@ const shopItems = [
     id: 7,
     name: "Schildpad Sneakers",
     image: "./assets/images/turtle.jpg",
+    imageCode: "turtle.jpg",
+    slide: "./assets/extra/turtle.png",
     category: "Schoenen",
     price: 40,
     description:
@@ -68,14 +82,15 @@ const shopItems = [
 let productAddedToHtml = document.querySelector(".item");
 let productId = parseInt(productAddedToHtml.id);
 
-
-/* chera dare kar mikone ba i ke 0 hast? */
 for (let i = 0; i < shopItems.length; i++) {
   const item = shopItems[i];
   if (item.id === productId) {
     const html = `
 
-    <img class="productImage" src="${shopItems[i].image}"/>
+    <div class="productImage">
+    <img class="mainImage" src="${shopItems[i].image}"/>
+    <button class="slideChange">Volgende</button>
+    </div>
 
     <div class="information">
       <article class="hidden-in-mobile">${shopItems[i].name}</article>
@@ -93,5 +108,14 @@ for (let i = 0; i < shopItems.length; i++) {
     </div>`;
 
     productAddedToHtml.innerHTML = html;
+    let slidingImage = document.querySelector(".mainImage");
+    let button = document.querySelector(".slideChange");
+    button.addEventListener("click", () => {
+      if (slidingImage.src.includes(shopItems[i].imageCode)) {
+        slidingImage.src = shopItems[i].slide;
+      } else {
+        slidingImage.src = shopItems[i].image;
+      }
+    });
   }
 }
